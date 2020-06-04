@@ -1,0 +1,22 @@
+name: 'GCP Github Action'
+description: 'This action creates a simple interface for GCloud CLI tool. It takes a raw commands.'
+author: 'Convictional'
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
+inputs:
+  application_credentials:
+    description: "These are the IAM credentials that will be set up."
+    required: false
+  project_id:
+    description: "The project id that the commands will be associated with."
+    required: false
+  commands:
+    description: "Takes an array of raw strings that executes on the GCloud Docker image."
+    required: false
+  command:
+    description: "Takes a raw string that executes on the GCloud Docker image."
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
