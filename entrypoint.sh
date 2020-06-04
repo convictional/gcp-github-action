@@ -1,5 +1,4 @@
 #!/bin/sh
-
 function setup_gcp_config {
   # Check for project id
   if [ -z "$INPUT_PROJECT_ID" ]
@@ -45,3 +44,5 @@ function main {
   run_commands
   run_command
 }
+
+main
