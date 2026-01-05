@@ -1,3 +1,5 @@
+Update January 2026: This repository is now archived.
+
 # GCP Github Action
 
 This action creates a simple interface for GCloud CLI tool. It takes a raw commands.
